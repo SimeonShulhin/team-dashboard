@@ -26,9 +26,9 @@ export function useTeam() {
         const response = await fetch('/api/team');
         if (!response.ok) throw new Error('Failed to fetch team data');
         const data = await response.json();
-
         // Save to localStorage and state
         setInStorage('team-dashboard-members', data);
+        setMembers(data);
       } catch (err) {
         const message = err instanceof Error ? err.message : 'Error loading team data';
         setError(message);

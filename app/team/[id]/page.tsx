@@ -31,9 +31,17 @@ interface EditableFieldProps {
   onSave: (newValue: string) => Promise<void>;
   type?: 'text' | 'tel';
   placeholder?: string;
+  name?: string;
 }
 
-function EditableField({ label, value, onSave, type = 'text', placeholder }: EditableFieldProps) {
+function EditableField({
+  label,
+  value,
+  onSave,
+  type = 'text',
+  placeholder,
+  name,
+}: EditableFieldProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [editValue, setEditValue] = useState(value);
   const [saving, setSaving] = useState(false);
@@ -85,20 +93,24 @@ function EditableField({ label, value, onSave, type = 'text', placeholder }: Edi
           value={editValue}
           onChange={(e) => setEditValue(e.target.value)}
           placeholder={placeholder}
-          className='flex-1 px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+          name={name}
+          className='flex-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent'
           autoFocus
+          autoComplete={name}
         />
-        <button
-          onClick={handleSave}
-          disabled={saving}
-          className='p-2 bg-green-600 text-white rounded-md hover:bg-green-700 disabled:opacity-50 transition-colors'>
-          {saving ? <Loader2 className='h-4 w-4 animate-spin' /> : <Save className='h-4 w-4' />}
-        </button>
-        <button
-          onClick={handleCancel}
-          className='p-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition-colors'>
-          <X className='h-4 w-4' />
-        </button>
+        <div className='flex flex-col gap-2 md:flex-row'>
+          <button
+            onClick={handleSave}
+            disabled={saving}
+            className='p-2 bg-green-600 text-white rounded-md hover:bg-green-700 disabled:opacity-50 transition-colors'>
+            {saving ? <Loader2 className='h-4 w-4 animate-spin' /> : <Save className='h-4 w-4' />}
+          </button>
+          <button
+            onClick={handleCancel}
+            className='p-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition-colors'>
+            <X className='h-4 w-4' />
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -335,9 +347,10 @@ function MemberProfileContent() {
                     ? `${optimisticMember.phone} updating...`
                     : optimisticMember.phone || ''
                 }
-                onSave={(value) => handleFieldUpdate('phone', value)}
                 type='tel'
                 placeholder='+380671234567'
+                onSave={(value) => handleFieldUpdate('phone', value)}
+                name='phone'
               />
 
               <EditableField
@@ -347,8 +360,8 @@ function MemberProfileContent() {
                     ? `${optimisticMember.telegramNickname} updating...`
                     : optimisticMember.telegramNickname || ''
                 }
-                onSave={(value) => handleFieldUpdate('telegramNickname', value)}
                 placeholder='@username'
+                onSave={(value) => handleFieldUpdate('telegramNickname', value)}
               />
 
               <div className='mt-6 p-4 bg-blue-50 rounded-lg'>
