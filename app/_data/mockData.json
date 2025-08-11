@@ -1,0 +1,218 @@
+{
+  "teamMembers": [
+    {
+      "id": "1",
+      "name": "Олександр Іваненко",
+      "role": "Team Lead",
+      "department": "Технічний",
+      "status": "активний",
+      "phone": "+380671234567",
+      "telegramNickname": "@alex_ivanov",
+      "email": "alex.ivanov@company.ua",
+      "joinDate": "2022-03-15"
+    },
+    {
+      "id": "2",
+      "name": "Марія Петренко",
+      "role": "Senior Developer",
+      "department": "Технічний",
+      "status": "активний",
+      "phone": "+380672345678",
+      "telegramNickname": "@maria_dev",
+      "email": "maria.petrenko@company.ua",
+      "joinDate": "2021-09-10"
+    },
+    {
+      "id": "3",
+      "name": "Дмитро Сидоренко",
+      "role": "Manager",
+      "department": "Продажі",
+      "status": "активний",
+      "phone": "+380673456789",
+      "telegramNickname": "@dmitro_sales",
+      "email": "dmitro.sydorenko@company.ua",
+      "joinDate": "2020-05-20"
+    },
+    {
+      "id": "4",
+      "name": "Анна Коваленко",
+      "role": "Analyst",
+      "department": "Фінанси",
+      "status": "активний",
+      "phone": "+380674567890",
+      "telegramNickname": "@anna_finance",
+      "email": "anna.kovalenko@company.ua",
+      "joinDate": "2023-01-12"
+    },
+    {
+      "id": "5",
+      "name": "Володимир Шевченко",
+      "role": "Developer",
+      "department": "Технічний",
+      "status": "неактивний",
+      "phone": "+380675678901",
+      "telegramNickname": "@volodya_code",
+      "email": "volodymyr.shevchenko@company.ua",
+      "joinDate": "2022-11-08"
+    },
+    {
+      "id": "6",
+      "name": "Юлія Мельник",
+      "role": "Designer",
+      "department": "Технічний",
+      "status": "активний",
+      "phone": "+380676789012",
+      "telegramNickname": "@julia_design",
+      "email": "julia.melnyk@company.ua",
+      "joinDate": "2023-06-15"
+    },
+    {
+      "id": "7",
+      "name": "Сергій Гончаренко",
+      "role": "Manager",
+      "department": "Продажі",
+      "status": "активний",
+      "phone": "+380677890123",
+      "telegramNickname": "@sergiy_manager",
+      "email": "sergiy.goncharenko@company.ua",
+      "joinDate": "2021-04-22"
+    },
+    {
+      "id": "8",
+      "name": "Тетяна Лисенко",
+      "role": "Analyst",
+      "department": "Фінанси",
+      "status": "активний",
+      "phone": "+380678901234",
+      "telegramNickname": "@tetyana_analyst",
+      "email": "tetyana.lysenko@company.ua",
+      "joinDate": "2022-08-30"
+    },
+    {
+      "id": "9",
+      "name": "Ігор Морозенко",
+      "role": "Junior Developer",
+      "department": "Технічний",
+      "status": "активний",
+      "phone": "+380679012345",
+      "telegramNickname": "@igor_junior",
+      "email": "igor.morozenko@company.ua",
+      "joinDate": "2024-02-14"
+    },
+    {
+      "id": "10",
+      "name": "Катерина Біленко",
+      "role": "Manager",
+      "department": "Продажі",
+      "status": "активний",
+      "phone": "+380670123456",
+      "telegramNickname": "@kate_sales",
+      "email": "kateryna.bilenko@company.ua",
+      "joinDate": "2023-10-05"
+    },
+    {
+      "id": "11",
+      "name": "Максим Ткаченко",
+      "role": "Senior Developer",
+      "department": "Технічний",
+      "status": "активний",
+      "phone": "+380671234567",
+      "telegramNickname": "@max_senior",
+      "email": "maksym.tkachenko@company.ua",
+      "joinDate": "2020-12-01"
+    },
+    {
+      "id": "12",
+      "name": "Олена Романенко",
+      "role": "Analyst",
+      "department": "Фінанси",
+      "status": "неактивний",
+      "phone": "+380672345678",
+      "telegramNickname": "@elena_numbers",
+      "email": "olena.romanenko@company.ua",
+      "joinDate": "2021-07-18"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Розробка API користувачів",
+      "description": "Створити REST API для управління користувачами",
+      "status": "In Progress",
+      "assignedTo": "2",
+      "createdAt": "2024-08-01T09:00:00Z",
+      "updatedAt": "2024-08-05T14:30:00Z",
+      "priority": "high"
+    },
+    {
+      "id": "t2",
+      "title": "Оптимізація бази даних",
+      "description": "Покращити продуктивність запитів до БД",
+      "status": "To Do",
+      "assignedTo": "11",
+      "createdAt": "2024-08-02T10:00:00Z",
+      "updatedAt": "2024-08-02T10:00:00Z",
+      "priority": "medium"
+    },
+    {
+      "id": "t3",
+      "title": "Налаштування CI/CD",
+      "description": "Автоматизувати процес деплойменту",
+      "status": "Done",
+      "assignedTo": "1",
+      "createdAt": "2024-07-20T08:00:00Z",
+      "updatedAt": "2024-08-01T16:00:00Z",
+      "priority": "high"
+    },
+    {
+      "id": "t4",
+      "title": "Створення макетів",
+      "description": "Дизайн нових сторінок додатку",
+      "status": "In Progress",
+      "assignedTo": "6",
+      "createdAt": "2024-08-03T11:00:00Z",
+      "updatedAt": "2024-08-06T09:15:00Z",
+      "priority": "medium"
+    },
+    {
+      "id": "t5",
+      "title": "Тестування функціоналу",
+      "description": "Написати unit тести для нових функцій",
+      "status": "To Do",
+      "assignedTo": "9",
+      "createdAt": "2024-08-04T13:00:00Z",
+      "updatedAt": "2024-08-04T13:00:00Z",
+      "priority": "low"
+    },
+    {
+      "id": "t6",
+      "title": "Аналіз продажів",
+      "description": "Підготувати звіт з продажів за квартал",
+      "status": "Done",
+      "assignedTo": "4",
+      "createdAt": "2024-07-25T07:00:00Z",
+      "updatedAt": "2024-08-05T17:00:00Z",
+      "priority": "medium"
+    },
+    {
+      "id": "t7",
+      "title": "Оновлення документації",
+      "description": "Актуалізувати техдокументацію проекту",
+      "status": "To Do",
+      "assignedTo": "2",
+      "createdAt": "2024-08-05T15:00:00Z",
+      "updatedAt": "2024-08-05T15:00:00Z",
+      "priority": "low"
+    },
+    {
+      "id": "t8",
+      "title": "Бюджетне планування",
+      "description": "Розробити бюджет на наступний квартал",
+      "status": "In Progress",
+      "assignedTo": "8",
+      "createdAt": "2024-08-06T12:00:00Z",
+      "updatedAt": "2024-08-07T10:30:00Z",
+      "priority": "high"
+    }
+  ]
+}
